@@ -14,12 +14,6 @@ Algoritmo ej_2
 	Definir contra_usuario Como Texto;
 	contra_usuario = "def contrasenia";
 	
-	Definir MSJ_BIENVENIDO como Texto;
-	MSJ_BIENVENIDO = "Bienvenido ";
-	definir MSJ_ERROR_CONTRASENIA como texto;
-	MSJ_ERROR_CONTRASENIA = "Contraseña incorrecta";
-	definir MSJ_ERROR_USUARIO como texto;
-	MSJ_ERROR_USUARIO = "Usuario incorrecto";
 	Definir MSJ_ERROR como texto;
 	MSJ_ERROR = "Error, intenos restantes ";
 
@@ -28,7 +22,7 @@ Algoritmo ej_2
 		
 		Escribir "Ingrese su usuario:";
 		Leer nick_usuario;
-		Escribir "Ingrese la contraseña:";
+		Escribir "Ingrese la contraseÃ±a:";
 		Leer contra_usuario;
 		
 		Si (nick_usuario==USUARIO_1) Y (contra_usuario==CONTRASENIA_1) Entonces
@@ -37,10 +31,9 @@ Algoritmo ej_2
 		SiNo
 			Escribir MSJ_ERROR,INTENTOS_MAX-iterador;
 			Si iterador==INTENTOS_MAX Entonces
-				Escribir "Alcanzo la cantidad de intentos maximos por hoy, intente nuevamente mañana";
+				Escribir "Alcanzo la cantidad de intentos maximos por hoy, intente nuevamente maÃ±ana";
 			FinSi
 		FinSi
 	FinPara
 	
 FinAlgoritmo
-
